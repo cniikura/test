@@ -6,10 +6,10 @@
 <body>
 <script>
 //言語判定・リダイレクト
-let thisPageLang = location.pathname.split('/')[1];
+let thisPageLang = location.pathname.split('/')[2];
 let userLang = (navigator.language) ? navigator.language : navigator.userLanguage;
 
-console.log(location.pathname);
+// console.log(location.pathname);
 console.log(thisPageLang);
 console.log(userLang);
 
