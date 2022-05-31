@@ -4,5 +4,21 @@
 <title></title>
 </head>
 <body>
+<script>
+//言語判定・リダイレクト
+let thisPageLang = location.pathname.split('/')[1];
+let userLang = (navigator.language) ? navigator.language : navigator.userLanguage;
+
+if(thisPageLang !== 'en'){
+	thisPageLang = "ja";
+}
+if(userLang.length > 2){
+	userLang = userLang.substring(0,2);
+}
+if(userLang !== undefined && thisPageLang !== userLang){
+	if(userLang === 'en' ) location.href = '/en/';
+	if(userLang === 'ja' ) location.href = '/';
+} 
+</script>
 </body>
 </html>
