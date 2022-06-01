@@ -27,21 +27,6 @@
           console.log('ServiceWorker registration failed: ', err);
       });
       }
-      // vue.jsの設定関係
-      const app = {
-        data() {
-          return {
-            message: 'Hello Vue!'
-          }
-        },
-        methods: {
-          reverseMessage: function () {
-            this.message = this.message.split('').reverse().join('')
-          }
-        }
-      };
-      Vue.createApp(app).mount('#app');
-  
       </script>
   </body>
 </html>
